@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% block stylesheets %}
+		{{ encore_entry_link_tags('app') }}
+	{% endblock %}
+
+	<title>Hello, world!</title>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg" id="top-menu">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fab fa-youtube-square"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fab fa-discord"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<i class="fab fa-snapchat-square"></i>
+				</a>
+			</li>
+		</ul>
+
+	</nav>
+	<nav class="navbar navbar-expand-lg" id="main-nav">
+		<a class="navbar-brand" href="#">
+			<img src="{{ asset('build/images/logo.png') }}" alt="A.E.E.S.">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#"><i class="fas fa-home"></i> Accueil<span
+								class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-question-circle"></i> A propos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i> Evenements</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-newspaper"></i> Ingénu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-paper-plane"></i> Contact</a>
+				</li>
+			</ul>
+
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+				        aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-user-circle"></i> Mon compte
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<main class="container">
+
+
+	<div class="row">
+		<div class="col-9">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+					<li class="breadcrumb-item"><a href="#">Library</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Data</li>
+				</ol>
+			</nav>
+
+			<div id="content">
+				<h1>
+					Lorem Ipsum
+				</h1>
+				<img class="img-responsive" src="https://i.ytimg.com/vi/MzgM5WtZWYA/maxresdefault.jpg"/>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit mauris, auctor nec sodales sit amet,
+					ornare eleifend metus. Aliquam consectetur felis magna, id hendrerit nulla tincidunt eu. Class aptent
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec elementum tempor
+					iaculis. Nam iaculis elit a porta volutpat. Morbi ligula dui, sodales ac tellus non, eleifend egestas
+					felis. Phasellus eu ante a justo tristique faucibus vitae at ex. Sed mollis in tortor sit amet sagittis.
+					In ac gravida nisl. Vestibulum ultricies suscipit enim non finibus. Ut dapibus arcu dignissim, gravida
+					turpis id, auctor urna. Duis vitae quam elementum, ullamcorper augue eget, tristique enim. Curabitur vel
+					ante turpis. Maecenas vitae arcu justo.
+				</p>
+				<p>
+					Nullam dignissim urna eget arcu tempor rhoncus. Curabitur at est nisl. Ut aliquam, purus eget rutrum
+					vulputate, magna justo porta nisi, nec faucibus metus quam vulputate ipsum. Suspendisse potenti. Morbi at
+					diam non odio pharetra aliquam. Nulla molestie est elit, eget laoreet risus tincidunt vel. Morbi nec
+					lectus nec est egestas dapibus.
+				</p>
+				<p>
+					Nunc posuere libero aliquet, porta orci blandit, vulputate erat. Nullam efficitur tellus vel est
+					lobortis, eu tincidunt felis aliquet. Quisque ac laoreet purus. Donec aliquam vehicula mi, porta pulvinar
+					tortor vulputate id. Nullam a ante nunc. Duis ultrices mattis congue. Etiam congue gravida eros, eu
+					fringilla nisi interdum ut.
+				</p>
+				<p>
+					Vestibulum quis rhoncus sem. Quisque convallis mi ut orci dictum, vestibulum porttitor nulla consectetur.
+					Sed porttitor semper molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+					ac turpis egestas. Aenean et hendrerit dolor, quis rhoncus est. Curabitur viverra arcu et nibh mattis
+					ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc
+					varius dolor eget tristique posuere. Vestibulum faucibus aliquet diam id lobortis. Aliquam scelerisque
+					ligula nec nunc sodales porttitor. Duis ullamcorper metus non mi posuere iaculis. Nam cursus eget felis
+					porta commodo. Quisque aliquet sit amet dolor non accumsan. Cras sit amet odio gravida, pharetra tortor
+					et, vestibulum velit. In eget vulputate mi.
+				</p>
+				<p>
+					Curabitur suscipit faucibus aliquam. Donec vitae consectetur felis. Phasellus odio tellus, rutrum in
+					rhoncus nec, dictum a mauris. Aenean accumsan felis ut finibus vestibulum. Proin hendrerit pretium massa
+					nec cursus. Proin vehicula sapien non tincidunt varius. Proin scelerisque quam sapien, a hendrerit nunc
+					faucibus eget. Aenean arcu justo, ullamcorper ut feugiat eget, porta eu tellus. Interdum et malesuada
+					fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia
+					nostra, per inceptos himenaeos. In fermentum orci vitae lobortis egestas. Nunc sed commodo elit. Ut ut
+					aliquam lectus. In hac habitasse platea dictumst.
+				</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<aside>
+				<div class="aside-header">
+					<h5>Aside</h5>
+				</div>
+				<div class="aside-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit mauris, auctor nec sodales sit amet,
+					ornare eleifend metus. Aliquam consectetur felis magna, id hendrerit nulla tincidunt eu. Class aptent
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec elementum tempor
+					iaculis. Nam iaculis elit a porta volutpat. Morbi ligula dui, sodales ac tellus non, eleifend egestas
+					felis. Phasellus eu ante a justo tristique faucibus vitae at ex. Sed mollis in tortor sit amet sagittis.
+					In ac gravida nisl. Vestibulum ultricies suscipit enim non finibus. Ut dapibus arcu dignissim, gravida
+					turpis id, auctor urna. Duis vitae quam elementum, ullamcorper augue eget, tristique enim. Curabitur vel
+					ante turpis. Maecenas vitae arcu justo.
+
+				</div>
+			</aside>
+			<aside>
+				<div class="aside-header">
+					<h5>
+						Aside
+					</h5>
+				</div>
+				<div class="aside-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit mauris, auctor nec sodales sit amet,
+					ornare eleifend metus. Aliquam consectetur felis magna, id hendrerit nulla tincidunt eu. Class aptent
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec elementum tempor
+					iaculis. Nam iaculis elit a porta volutpat. Morbi ligula dui, sodales ac tellus non, eleifend egestas
+					felis. Phasellus eu ante a justo tristique faucibus vitae at ex. Sed mollis in tortor sit amet sagittis.
+					In ac gravida nisl. Vestibulum ultricies suscipit enim non finibus. Ut dapibus arcu dignissim, gravida
+					turpis id, auctor urna. Duis vitae quam elementum, ullamcorper augue eget, tristique enim. Curabitur vel
+					ante turpis. Maecenas vitae arcu justo.
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
+
+
+{% block javascripts %}
+	{{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
+</html>

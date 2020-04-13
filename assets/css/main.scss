@@ -21,6 +21,9 @@
 @import "abstracts/placeholders";
 
 @import "~bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import "base/base";
 @import "base/typography";
@@ -29,3 +32,6 @@
 
 @import "components/header";
 @import "components/footer";
+@import "components/main_menu";
+@import "components/top_menu";
+@import "components/breadcrumb";

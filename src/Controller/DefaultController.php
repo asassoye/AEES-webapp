@@ -1,4 +1,5 @@
-/*!
+<?php
+/**
  * Copyright (C) 2020 Andrew SASSOYE
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -15,22 +16,22 @@
  *
  */
 
-$font-stack: Lato, sans-serif;
-$font-menu: 'Yanone Kaffeesatz', sans-serif;
-$bg-color-primary: #34495e;
-$bg-color-second: #19242f;
-$bg-color-stand: #ecf0f1;
+namespace App\Controller;
 
-$link-color: #5c82aa;
 
-$header-shadow-color: rgba(0, 0, 0, 0.75);
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 
-$header-logo-max-height: 170px;
-
-//MAIN MENU
-$main-menu-bg: transparant;
-$main-menu-bg-hover: #fff;
-$main-menu-color: #fff;
-$main-menu-color-hover: $bg-color-primary;
-
-$breadcrumb-divider: quote(">");
+/**
+ * @Route(host="www.aees.e0a806a.asassoye.dev")
+ */
+class DefaultController extends AbstractController
+{
+    /**
+     * @Route(path="/")
+     */
+    public function index()
+    {
+        return $this->render("test.html.twig");
+    }
+}

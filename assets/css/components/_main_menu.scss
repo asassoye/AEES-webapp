@@ -15,22 +15,35 @@
  *
  */
 
-$font-stack: Lato, sans-serif;
-$font-menu: 'Yanone Kaffeesatz', sans-serif;
-$bg-color-primary: #34495e;
-$bg-color-second: #19242f;
-$bg-color-stand: #ecf0f1;
+nav#main-nav {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #34495e;
+  height: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 
-$link-color: #5c82aa;
+  a.navbar-brand {
+    img {
+      max-height: 10rem;
+    }
+  }
 
-$header-shadow-color: rgba(0, 0, 0, 0.75);
+  ul.navbar-nav {
+    li {
+      a {
+        font-weight: 700;
+        height: 5rem;
+        color: white;
+        line-height: 5rem;
+        padding: 0 1.5rem;
+      }
 
-$header-logo-max-height: 170px;
-
-//MAIN MENU
-$main-menu-bg: transparant;
-$main-menu-bg-hover: #fff;
-$main-menu-color: #fff;
-$main-menu-color-hover: $bg-color-primary;
-
-$breadcrumb-divider: quote(">");
+      &.active, &:hover {
+        a {
+          background-color: white;
+          color: #34495e;
+        }
+      }
+    }
+  }
+}

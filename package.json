@@ -13,7 +13,9 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0"
+    },
     "devDependencies": {
         "@symfony/webpack-encore": "^0.28.2",
         "bootstrap": "^4.4.1",
